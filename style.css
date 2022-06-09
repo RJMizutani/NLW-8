@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*é a raiz do documento HTML aplicada no CSS é oque possui a maior especificidade aqui podemos trabalhar com variaveis de cor sem usando ( -- )*/
+:root {
+  --primary-color: hsl(170, 100%, 26%);
+  --headline: hsl(210, 11%, 15%);
+  --paragraph: hsl(210, 9%, 31%);
+  --white: hsl(00, 100%, 100%);
+  --background-color: hsl(160, 100%, 75%);
+
+  font-size: 62.5%; /* dentro destas condições de root 1rem = 10px */
+}
+
+header {
+  width: 37.5rem;
+  margin: 4.1rem auto auto auto;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.4rem;
+  color: var(--headline);
+  line-height: 130%;
+  margin-bottom: 2.4rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  margin-bottom: 1.6rem;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 150%;
+  font-weight: 400;
+  color: var(--paragraph);
+  margin-bottom: 3.2rem;
+}
+
+button {
+  background: var(--primary-color);
+  border-radius: 4rem;
+  padding: 0.5rem;
+  margin-bottom: 0rem;
+  height: 6.2rem;
+  width: 26.3rem;
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  /*display flex permite fazermos alterações nos itens filho da caixa
+  ao utilizar o display flex ele define a caixa pai como block*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.caixa-da-foto {
+  background-color: var(--white);
+  padding: 18rem 4rem 8rem 4rem;
+  margin: 0% 40% 0% 40%;
+  position: absolute;
+}
